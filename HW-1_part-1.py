@@ -40,6 +40,8 @@ if __name__ == '__main__':
     pickle_serializer = PickleSerialization()
     pickle_serializer.serialize(data)
     print(pickle_serializer.deserialize(data))
+    print(data['Name'])
     json_serializer = JsonSerialization()
     json_serializer.serialize(data)
     print(json_serializer.deserialize(data))
+    print(data['Surname'])
